@@ -8,6 +8,7 @@
   imports =
     [ 
       ./hardware-configuration.nix
+      ./tailscale.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
