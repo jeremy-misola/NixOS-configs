@@ -1,6 +1,9 @@
 { config, pkgs, ... }:
 {
-
+  imports = [
+    ./modules/utils.nix
+    ./modules/nixvim.nix
+  ];
 
   home.username = "jurassicjey";
   home.homeDirectory = "/home/jurassicjey";
@@ -13,5 +16,6 @@
       nrs = "sudo nixos-rebuild switch --flake /home/jurassicjey/nixos-config";
     };
   };
+  programs.kitty.enable = true;
 }
 

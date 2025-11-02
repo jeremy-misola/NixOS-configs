@@ -1,0 +1,3 @@
+{
+  colorschemes.bamboo.enable = true;
+}

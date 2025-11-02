@@ -1,13 +1,18 @@
 { config, pkgs, nixvim, ... }:
 {
 
-imports = [ nixvim.homeManagerModules.nixvim ];
+imports = [ 
+  nixvim.homeManagerModules.nixvim 
+  ./lazyvim-config
+];
 
   programs.nixvim = {
     enable = true;
-    colorschemes.tokyonight = {
-      enable = true;
-      settings.style = "night";
+    defaultEditor = true;
+    viAlias = true;
+    vimAlias = true;
+    globals = {
+      mapleader = " ";
     };
   };
 }

@@ -29,7 +29,6 @@
 	    users.jurassicjey = {
 	      imports = [
 	        ./home.nix
-		./modules/nixvim.nix
 	      ];
 	    };
             backupFileExtension = "backup";

@@ -13,6 +13,12 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  fonts.packages = with pkgs; [
+    nerd-fonts.fira-code
+    jetbrains-mono
+    nerd-fonts.droid-sans-mono
+  ];
+
   networking.hostName = "nixos"; 
 
   networking.networkmanager.enable = true;
