@@ -8,7 +8,6 @@
   imports =
     [ 
       ./hardware-configuration.nix
-      ./packages.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
@@ -67,15 +66,12 @@
   programs.hyprland.enable = true;
 
   environment.systemPackages = with pkgs; [
-    neovim 
-    ripgrep
     hyprland
     kitty
     waybar
     wofi
     nwg-look
     home-manager
-    git
   ];
 
    
