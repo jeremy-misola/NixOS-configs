@@ -2,8 +2,10 @@
 {
   imports = [
     ./modules/utils.nix
+    ./modules/vscodium.nix
     ./modules/nixvim.nix
     ./modules/kitty.nix
+    ./modules/tailscale.nix
   ];
 
   home.username = "jurassicjey";

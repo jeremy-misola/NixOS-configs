@@ -3,7 +3,7 @@
 
 imports = [ 
   nixvim.homeManagerModules.nixvim 
-  ./lazyvim-config
+  ./nixvim-config
 ];
 
   programs.nixvim = {

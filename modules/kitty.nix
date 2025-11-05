@@ -10,6 +10,12 @@
       name = "jetbrains-mono";
     };
     themeFile = "everforest_dark_hard";
+    extraConfig = 
+    ''
+    cursor_shape block
+    cursor_trail 20
+    background_blur 30
+    '';
   };
 
 }

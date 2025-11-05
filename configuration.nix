@@ -8,7 +8,7 @@
   imports =
     [ 
       ./hardware-configuration.nix
-      ./tailscale.nix
+      ./system-modules/tailscale.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
@@ -78,8 +78,13 @@
     waybar
     wofi
     nwg-look
+    tree
     home-manager
+    btop
   ];
+  environment.variables = {
+    GRAPHVIZ_DOT = "${pkgs.graphviz}/bin/dot";
+  };
 
    
   nix.settings.experimental-features = [ "nix-command" "flakes" ]; 
