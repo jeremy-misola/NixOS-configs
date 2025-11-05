@@ -9,6 +9,7 @@
     [ 
       ./hardware-configuration.nix
       ./system-modules/tailscale.nix
+      ./system-modules/docker.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
