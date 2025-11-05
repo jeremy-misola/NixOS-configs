@@ -2,9 +2,11 @@
 {
   imports = [
     ./modules/utils.nix
+    ./modules/curl.nix
     ./modules/btop.nix
     ./modules/vscodium.nix
     ./modules/nixvim.nix
+    ./modules/fastfetch.nix
     ./modules/kitty.nix
 
   ];

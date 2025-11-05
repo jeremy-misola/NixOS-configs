@@ -1,6 +1,6 @@
 { pkgs, config, lib, ... }:
 {
-programs.fastfetch = {
+programs.curl = {
   enable = true;
   };
 }
