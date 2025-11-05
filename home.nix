@@ -1,8 +1,8 @@
 { config, pkgs, ... }:
 {
   imports = [
+    ./modules/dev-env.nix
     ./modules/utils.nix
-    ./modules/curl.nix
     ./modules/btop.nix
     ./modules/vscodium.nix
     ./modules/nixvim.nix
@@ -20,9 +20,10 @@
     shellAliases = {
       btw = "echo i use nixos, btw";
       nrs = "sudo nixos-rebuild switch --flake /home/jurassicjey/nixos-config";
+      cd = "z";
+      k = "kubectl";
     };
   };
-  programs.kitty.enable = true;
 
 }
 
