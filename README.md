@@ -18,12 +18,12 @@ My journey here began after I fell in love with the Nix philosophy of declarativ
 
 This configuration is built with modularity and reproducibility at its core, leveraging modern Nix features to manage complexity.
 
-*   **Flake-Based Management**: The entire system is orchestrated through a `flake.nix` entrypoint. This locks all dependencies—including `nixpkgs`, `home-manager`, and `nixvim`—to specific commits, guaranteeing bit-for-bit reproducibility across machines and over time.
+*   **Flake-Based Management**: The entire system is orchestrated through a `flake.nix` entrypoint. This locks all dependencies, including `nixpkgs`, `home-manager`, and `nixvim` to specific commits, guaranteeing bit-for-bit reproducibility across machines and over time.
 
 *   **Modular Design**: The configuration is logically partitioned into `system-modules` (for services like Docker and Tailscale) and `home-manager` modules (for user-level applications like Kitty and NixVim). This separation of concerns keeps the codebase clean and easy to maintain.
 
 *   **System Configuration**:
-    *   **OS**: NixOS 25.05, enabling atomic upgrades and safe rollbacks.
+    *   **OS**: NixOS 25.05, enabling atomic upgrades and safe rollbacks.e 
     *   **Boot**: `systemd-boot` for a clean, fast, and straightforward UEFI boot process.
     *   **Services**: System-level services like `Docker` and `Tailscale` are managed declaratively, ensuring they are configured correctly on every build.
     *   **Audio**: `PipeWire` is used for a modern, low-latency audio stack.
