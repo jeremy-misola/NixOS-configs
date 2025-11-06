@@ -2,6 +2,7 @@
 {
   imports = [
     ./modules/dev-env.nix
+    ./modules/kubernetes.nix
     ./modules/utils.nix
     ./modules/btop.nix
     ./modules/vscodium.nix
@@ -21,7 +22,7 @@
       btw = "echo i use nixos, btw";
       nrs = "sudo nixos-rebuild switch --flake /home/jurassicjey/nixos-config";
       cd = "z";
-      k = "kubectl";
+      k = "kubecolor";
     };
   };
 

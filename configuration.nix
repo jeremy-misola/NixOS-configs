@@ -80,8 +80,9 @@
     wofi
     nwg-look
     tree
+    kubectl
     home-manager
-    btop
+    minikube
   ];
   environment.variables = {
     GRAPHVIZ_DOT = "${pkgs.graphviz}/bin/dot";
