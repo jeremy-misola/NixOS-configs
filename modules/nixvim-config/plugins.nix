@@ -13,6 +13,9 @@
       "<leader>ff" = "find_files";
     };
   };
+  plugins.smear-cursor = {
+    enable = true; 
+  };
 
 
 }
