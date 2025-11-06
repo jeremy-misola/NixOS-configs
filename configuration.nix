@@ -34,7 +34,7 @@
     canary = {
       description = "Canary kb layout";
       languages = [ "eng" ];
-      symbolsFile = ./canary;
+      symbolsFile = ./kb/canary;
     };
   };
 
