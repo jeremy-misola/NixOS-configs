@@ -19,7 +19,7 @@
   programs.bash = {
     enable = true;
     shellAliases = {
-      btw = "echo i use nixos, btw";
+      btw = "echo i use nixos btw";
       nrs = "sudo nixos-rebuild switch --flake /home/jurassicjey/nixos-config";
       cd = "z";
       k = "kubecolor";

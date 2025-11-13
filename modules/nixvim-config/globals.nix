@@ -1,4 +1,10 @@
 {
-  plugins.lualine.enable = true;
+
+  options = {
+    number = true;
+    relativenumber = true;
+    shiftwidth = 2;
+  };
+
 
 }

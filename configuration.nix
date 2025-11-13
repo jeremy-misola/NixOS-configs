@@ -70,16 +70,21 @@
   programs.hyprland.enable = true;
 
   environment.systemPackages = with pkgs; [
-    hyprland
-    kitty
-    waybar
-    wofi
-    nwg-look
     tree
     kubectl
     home-manager
+    kubebuilder
+    kubebuilder
     minikube
+    awscli2
+    ncdu
+    gnumake
+    act
+    nodejs_24
+    playwright
+    playwright-test
   ];
+
   environment.variables = {
     GRAPHVIZ_DOT = "${pkgs.graphviz}/bin/dot";
   };
